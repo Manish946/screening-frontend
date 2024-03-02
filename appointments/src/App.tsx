@@ -7,9 +7,8 @@ import { PageAppointments } from './layouts/PageAppointments';
 
 function App() {
   return (
-    <div className="max-h-screen flex flex-col">
+    <div className="max-h-screen flex flex-col p-5">
       <PageHeader></PageHeader>
-      <div>2</div>
       <PageAppointments></PageAppointments>
     </div>
   );
