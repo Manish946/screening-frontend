@@ -4,7 +4,7 @@ import { Appointment } from "../Types/Appointments/Appointments";
 import { AppointmentItem } from "../components/AppointmentItem";
 
 export function PageAppointments() {
-    const [appointmentList, setAppointmentList] = useState<any[]>([]);
+    const [appointmentList, setAppointmentList] = useState<Appointment[]>([]);
 
     useEffect(() => {
         const fetchAppointments = async () => {
@@ -22,7 +22,6 @@ export function PageAppointments() {
     const titles = ["Patients", "Date", "Time", "Doctor", "Injury", "Action"];
     return (
         <div >
-            {/* Your Table header */}
             <table className="table-auto border-collapse border border-blue-1600 rounded">
                 <thead>
                     <tr>
